@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/jbogg/Documents/Repos/pycaret-testing/mlruns/1/29f2fd78092f4743b3845e82d81ce296/artifacts
+end_time: 1606676695179
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 29f2fd78092f4743b3845e82d81ce296
+run_uuid: 29f2fd78092f4743b3845e82d81ce296
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1606676695024
+status: 3
+tags: []
+user_id: jbogg
