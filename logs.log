@@ -6923,3 +6923,11 @@
 2020-12-02 10:53:50,574:INFO:Rendering Visual
 2020-12-02 10:53:50,961:INFO:Visual Rendered Successfully
 2020-12-02 10:53:51,096:INFO:plot_model() succesfully completed......................................
+2020-12-02 10:54:56,233:INFO:Initializing predict_model()
+2020-12-02 10:54:56,233:INFO:predict_model(estimator=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), ml_usecase=MLUsecase.ANOMALY)
+2020-12-02 10:56:02,415:INFO:Initializing predict_model()
+2020-12-02 10:56:02,415:INFO:predict_model(estimator=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), ml_usecase=MLUsecase.ANOMALY)
