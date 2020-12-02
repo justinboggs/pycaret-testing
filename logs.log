@@ -6751,3 +6751,7 @@
 2020-12-01 21:29:19,084:INFO:Rendering Visual
 2020-12-01 21:29:19,175:INFO:Visual Rendered Successfully
 2020-12-01 21:29:19,175:INFO:plot_model() succesfully completed......................................
+2020-12-01 21:29:19,212:INFO:Initializing save_model()
+2020-12-01 21:29:19,212:INFO:save_model(model=LdaModel(num_terms=4654, num_topics=4, decay=0.5, chunksize=100), model_name=final_models/Final NLP LDA Model 28Nov2020, verbose=True)
+2020-12-01 21:29:19,281:INFO:LdaModel(num_terms=4654, num_topics=4, decay=0.5, chunksize=100)
+2020-12-01 21:29:19,281:INFO:save_model() succesfully completed......................................
