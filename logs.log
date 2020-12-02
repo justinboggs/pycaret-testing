@@ -6860,3 +6860,66 @@
    verbose=False)
 2020-12-02 10:50:37,110:INFO:create_model() succesfully completed......................................
 2020-12-02 10:50:57,530:INFO:gpu_param set to False
+2020-12-02 10:52:01,569:INFO:Initializing assign_model()
+2020-12-02 10:52:01,570:INFO:assign_model(model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), transformation=False, score=True, verbose=True)
+2020-12-02 10:52:01,570:INFO:Checking exceptions
+2020-12-02 10:52:01,570:INFO:Determining Trained Model
+2020-12-02 10:52:01,570:INFO:Trained Model : Isolation Forest
+2020-12-02 10:52:01,570:INFO:Copying data
+2020-12-02 10:52:01,571:INFO:(1026, 84)
+2020-12-02 10:52:01,571:INFO:assign_model() succesfully completed......................................
+2020-12-02 10:53:19,287:INFO:Initializing plot_model()
+2020-12-02 10:53:19,287:INFO:plot_model(plot=tsne, fold=None, use_train_data=False, verbose=True, display=None, estimator=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2020-12-02 10:53:19,287:INFO:Checking exceptions
+2020-12-02 10:53:19,287:INFO:Preparing display monitor
+2020-12-02 10:53:19,294:INFO:Preloading libraries
+2020-12-02 10:53:19,303:INFO:Copying training dataset
+2020-12-02 10:53:19,303:INFO:Plot type: tsne
+2020-12-02 10:53:19,381:INFO:SubProcess assign_model() called ==================================
+2020-12-02 10:53:19,382:INFO:Initializing assign_model()
+2020-12-02 10:53:19,382:INFO:assign_model(model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), transformation=True, score=False, verbose=False)
+2020-12-02 10:53:19,382:INFO:Checking exceptions
+2020-12-02 10:53:19,382:INFO:Determining Trained Model
+2020-12-02 10:53:19,382:INFO:Trained Model : Isolation Forest
+2020-12-02 10:53:19,382:INFO:Copying data
+2020-12-02 10:53:19,382:INFO:Transformation param set to True. Assigned clusters are attached on transformed dataset.
+2020-12-02 10:53:19,382:INFO:(1026, 92)
+2020-12-02 10:53:19,383:INFO:assign_model() succesfully completed......................................
+2020-12-02 10:53:19,383:INFO:SubProcess assign_model() end ==================================
+2020-12-02 10:53:19,385:INFO:Getting dummies to cast categorical variables
+2020-12-02 10:53:19,385:INFO:Fitting TSNE()
+2020-12-02 10:53:24,419:INFO:Rendering Visual
+2020-12-02 10:53:25,222:INFO:Visual Rendered Successfully
+2020-12-02 10:53:25,335:INFO:plot_model() succesfully completed......................................
+2020-12-02 10:53:43,940:INFO:Initializing plot_model()
+2020-12-02 10:53:43,940:INFO:plot_model(plot=umap, fold=None, use_train_data=False, verbose=True, display=None, estimator=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2020-12-02 10:53:43,940:INFO:Checking exceptions
+2020-12-02 10:53:43,940:INFO:Preparing display monitor
+2020-12-02 10:53:43,947:INFO:Preloading libraries
+2020-12-02 10:53:43,955:INFO:Copying training dataset
+2020-12-02 10:53:43,955:INFO:Plot type: umap
+2020-12-02 10:53:43,999:INFO:SubProcess assign_model() called ==================================
+2020-12-02 10:53:43,999:INFO:Initializing assign_model()
+2020-12-02 10:53:43,999:INFO:assign_model(model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), transformation=True, score=False, verbose=False)
+2020-12-02 10:53:43,999:INFO:Checking exceptions
+2020-12-02 10:53:43,999:INFO:Determining Trained Model
+2020-12-02 10:53:44,000:INFO:Trained Model : Isolation Forest
+2020-12-02 10:53:44,000:INFO:Copying data
+2020-12-02 10:53:44,000:INFO:Transformation param set to True. Assigned clusters are attached on transformed dataset.
+2020-12-02 10:53:44,000:INFO:(1026, 92)
+2020-12-02 10:53:44,000:INFO:assign_model() succesfully completed......................................
+2020-12-02 10:53:44,001:INFO:SubProcess assign_model() end ==================================
+2020-12-02 10:53:44,792:INFO:Fitting UMAP()
+2020-12-02 10:53:50,574:INFO:Rendering Visual
+2020-12-02 10:53:50,961:INFO:Visual Rendered Successfully
+2020-12-02 10:53:51,096:INFO:plot_model() succesfully completed......................................
