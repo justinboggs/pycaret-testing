@@ -7757,3 +7757,186 @@
                      metric_params=None, n_jobs=-1, n_neighbors=42, p=2,
                      weights='uniform')
 2020-12-02 14:02:30,253:INFO:tune_model() succesfully completed......................................
+2020-12-02 14:11:57,321:INFO:Initializing tune_model()
+2020-12-02 14:11:57,322:INFO:tune_model(estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=-1, oob_score=False, random_state=123, verbose=0,
+                       warm_start=False), fold=None, round=4, n_iter=10, custom_grid=None, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=False, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, display=None, kwargs={})
+2020-12-02 14:11:57,322:INFO:Checking exceptions
+2020-12-02 14:11:57,323:INFO:Preparing display monitor
+2020-12-02 14:11:57,337:INFO:Copying training dataset
+2020-12-02 14:11:57,339:INFO:Checking base model
+2020-12-02 14:11:57,339:INFO:Base model : Random Forest Classifier
+2020-12-02 14:11:57,346:INFO:Declaring metric variables
+2020-12-02 14:11:57,352:INFO:Defining Hyperparameters
+2020-12-02 14:11:57,441:INFO:Tuning with n_jobs=-1
+2020-12-02 14:11:57,441:INFO:Initializing RandomizedSearchCV
+2020-12-02 14:12:58,159:INFO:best_params: {'actual_estimator__n_estimators': 150, 'actual_estimator__min_samples_split': 10, 'actual_estimator__min_samples_leaf': 5, 'actual_estimator__min_impurity_decrease': 0.0002, 'actual_estimator__max_features': 1.0, 'actual_estimator__max_depth': 5, 'actual_estimator__criterion': 'entropy', 'actual_estimator__class_weight': {}, 'actual_estimator__bootstrap': False}
+2020-12-02 14:12:58,160:INFO:Random search completed
+2020-12-02 14:12:58,160:INFO:SubProcess create_model() called ==================================
+2020-12-02 14:12:58,161:INFO:Initializing create_model()
+2020-12-02 14:12:58,161:INFO:create_model(estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=-1, oob_score=False, random_state=123, verbose=0,
+                       warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=123, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=True, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x000002326FFCF3C8>, kwargs={'n_estimators': 150, 'min_samples_split': 10, 'min_samples_leaf': 5, 'min_impurity_decrease': 0.0002, 'max_features': 1.0, 'max_depth': 5, 'criterion': 'entropy', 'class_weight': {}, 'bootstrap': False})
+2020-12-02 14:12:58,161:INFO:Checking exceptions
+2020-12-02 14:12:58,161:INFO:Importing libraries
+2020-12-02 14:12:58,161:INFO:Copying training dataset
+2020-12-02 14:12:58,162:INFO:Defining folds
+2020-12-02 14:12:58,162:INFO:Declaring metric variables
+2020-12-02 14:12:58,169:INFO:Importing untrained model
+2020-12-02 14:12:58,169:INFO:Declaring custom model
+2020-12-02 14:12:58,175:INFO:Random Forest Classifier Imported succesfully
+2020-12-02 14:12:58,187:INFO:Starting cross validation
+2020-12-02 14:12:58,188:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=123, shuffle=False), n_jobs=-1
+2020-12-02 14:13:20,198:INFO:Calculating mean and std
+2020-12-02 14:13:20,199:INFO:Creating metrics dataframe
+2020-12-02 14:13:20,208:INFO:Finalizing model
+2020-12-02 14:13:23,222:INFO:Uploading results into container
+2020-12-02 14:13:23,222:INFO:Uploading model into container now
+2020-12-02 14:13:23,222:INFO:create_model_container: 21
+2020-12-02 14:13:23,222:INFO:master_model_container: 21
+2020-12-02 14:13:23,222:INFO:display_container: 7
+2020-12-02 14:13:23,223:INFO:RandomForestClassifier(bootstrap=False, ccp_alpha=0.0, class_weight={},
+                       criterion='entropy', max_depth=5, max_features=1.0,
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0002, min_impurity_split=None,
+                       min_samples_leaf=5, min_samples_split=10,
+                       min_weight_fraction_leaf=0.0, n_estimators=150,
+                       n_jobs=-1, oob_score=False, random_state=123, verbose=0,
+                       warm_start=False)
+2020-12-02 14:13:23,223:INFO:create_model() succesfully completed......................................
+2020-12-02 14:13:23,309:INFO:SubProcess create_model() end ==================================
+2020-12-02 14:13:23,319:INFO:create_model_container: 21
+2020-12-02 14:13:23,320:INFO:master_model_container: 21
+2020-12-02 14:13:23,320:INFO:display_container: 7
+2020-12-02 14:13:23,320:INFO:RandomForestClassifier(bootstrap=False, ccp_alpha=0.0, class_weight={},
+                       criterion='entropy', max_depth=5, max_features=1.0,
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0002, min_impurity_split=None,
+                       min_samples_leaf=5, min_samples_split=10,
+                       min_weight_fraction_leaf=0.0, n_estimators=150,
+                       n_jobs=-1, oob_score=False, random_state=123, verbose=0,
+                       warm_start=False)
+2020-12-02 14:13:23,320:INFO:tune_model() succesfully completed......................................
+2020-12-02 14:14:23,503:INFO:Initializing plot_model()
+2020-12-02 14:14:23,504:INFO:plot_model(plot=auc, fold=None, use_train_data=False, verbose=True, display=None, estimator=RandomForestClassifier(bootstrap=False, ccp_alpha=0.0, class_weight={},
+                       criterion='entropy', max_depth=5, max_features=1.0,
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0002, min_impurity_split=None,
+                       min_samples_leaf=5, min_samples_split=10,
+                       min_weight_fraction_leaf=0.0, n_estimators=150,
+                       n_jobs=-1, oob_score=False, random_state=123, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2020-12-02 14:14:23,504:INFO:Checking exceptions
+2020-12-02 14:14:23,623:INFO:Preparing display monitor
+2020-12-02 14:14:23,629:INFO:Preloading libraries
+2020-12-02 14:14:23,640:INFO:Copying training dataset
+2020-12-02 14:14:23,642:INFO:Copying test dataset
+2020-12-02 14:14:23,642:INFO:Plot type: auc
+2020-12-02 14:14:23,917:INFO:Fitting Model
+2020-12-02 14:14:23,918:INFO:Scoring test/hold-out set
+2020-12-02 14:14:24,265:INFO:Visual Rendered Successfully
+2020-12-02 14:14:24,354:INFO:plot_model() succesfully completed......................................
+2020-12-02 14:14:39,510:INFO:Initializing plot_model()
+2020-12-02 14:14:39,510:INFO:plot_model(plot=feature, fold=None, use_train_data=False, verbose=True, display=None, estimator=RandomForestClassifier(bootstrap=False, ccp_alpha=0.0, class_weight={},
+                       criterion='entropy', max_depth=5, max_features=1.0,
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0002, min_impurity_split=None,
+                       min_samples_leaf=5, min_samples_split=10,
+                       min_weight_fraction_leaf=0.0, n_estimators=150,
+                       n_jobs=-1, oob_score=False, random_state=123, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2020-12-02 14:14:39,510:INFO:Checking exceptions
+2020-12-02 14:14:39,624:INFO:Preparing display monitor
+2020-12-02 14:14:39,630:INFO:Preloading libraries
+2020-12-02 14:14:39,642:INFO:Copying training dataset
+2020-12-02 14:14:39,643:INFO:Copying test dataset
+2020-12-02 14:14:39,644:INFO:Plot type: feature
+2020-12-02 14:14:39,860:WARNING:No coef_ found. Trying feature_importances_
+2020-12-02 14:14:40,069:INFO:Visual Rendered Successfully
+2020-12-02 14:14:40,163:INFO:plot_model() succesfully completed......................................
+2020-12-02 14:15:51,659:INFO:Initializing plot_model()
+2020-12-02 14:15:51,659:INFO:plot_model(plot=pr, fold=None, use_train_data=False, verbose=True, display=None, estimator=RandomForestClassifier(bootstrap=False, ccp_alpha=0.0, class_weight={},
+                       criterion='entropy', max_depth=5, max_features=1.0,
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0002, min_impurity_split=None,
+                       min_samples_leaf=5, min_samples_split=10,
+                       min_weight_fraction_leaf=0.0, n_estimators=150,
+                       n_jobs=-1, oob_score=False, random_state=123, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2020-12-02 14:15:51,660:INFO:Checking exceptions
+2020-12-02 14:15:51,765:INFO:Preparing display monitor
+2020-12-02 14:15:51,771:INFO:Preloading libraries
+2020-12-02 14:15:51,782:INFO:Copying training dataset
+2020-12-02 14:15:51,783:INFO:Copying test dataset
+2020-12-02 14:15:51,784:INFO:Plot type: pr
+2020-12-02 14:15:52,009:INFO:Fitting Model
+2020-12-02 14:15:52,011:INFO:Scoring test/hold-out set
+2020-12-02 14:15:52,331:INFO:Visual Rendered Successfully
+2020-12-02 14:15:52,426:INFO:plot_model() succesfully completed......................................
+2020-12-02 14:16:18,165:INFO:Initializing plot_model()
+2020-12-02 14:16:18,165:INFO:plot_model(plot=confusion_matrix, fold=None, use_train_data=False, verbose=True, display=None, estimator=RandomForestClassifier(bootstrap=False, ccp_alpha=0.0, class_weight={},
+                       criterion='entropy', max_depth=5, max_features=1.0,
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0002, min_impurity_split=None,
+                       min_samples_leaf=5, min_samples_split=10,
+                       min_weight_fraction_leaf=0.0, n_estimators=150,
+                       n_jobs=-1, oob_score=False, random_state=123, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2020-12-02 14:16:18,165:INFO:Checking exceptions
+2020-12-02 14:16:18,282:INFO:Preparing display monitor
+2020-12-02 14:16:18,288:INFO:Preloading libraries
+2020-12-02 14:16:18,299:INFO:Copying training dataset
+2020-12-02 14:16:18,300:INFO:Copying test dataset
+2020-12-02 14:16:18,301:INFO:Plot type: confusion_matrix
+2020-12-02 14:16:18,530:INFO:Fitting Model
+2020-12-02 14:16:18,531:INFO:Scoring test/hold-out set
+2020-12-02 14:16:18,832:INFO:Visual Rendered Successfully
+2020-12-02 14:16:18,926:INFO:plot_model() succesfully completed......................................
+2020-12-02 14:16:36,472:INFO:Initializing evaluate_model()
+2020-12-02 14:16:36,473:INFO:evaluate_model(estimator=RandomForestClassifier(bootstrap=False, ccp_alpha=0.0, class_weight={},
+                       criterion='entropy', max_depth=5, max_features=1.0,
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0002, min_impurity_split=None,
+                       min_samples_leaf=5, min_samples_split=10,
+                       min_weight_fraction_leaf=0.0, n_estimators=150,
+                       n_jobs=-1, oob_score=False, random_state=123, verbose=0,
+                       warm_start=False), fold=None, fit_kwargs=None, feature_name=None, groups=None, use_train_data=False)
+2020-12-02 14:16:36,489:INFO:Initializing plot_model()
+2020-12-02 14:16:36,489:INFO:plot_model(plot=parameter, fold=StratifiedKFold(n_splits=10, random_state=123, shuffle=False), use_train_data=False, verbose=True, display=None, estimator=RandomForestClassifier(bootstrap=False, ccp_alpha=0.0, class_weight={},
+                       criterion='entropy', max_depth=5, max_features=1.0,
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0002, min_impurity_split=None,
+                       min_samples_leaf=5, min_samples_split=10,
+                       min_weight_fraction_leaf=0.0, n_estimators=150,
+                       n_jobs=-1, oob_score=False, random_state=123, verbose=0,
+                       warm_start=False), feature_name=None, fit_kwargs={}, groups=None, label=False, save=False, scale=1, system=True)
+2020-12-02 14:16:36,489:INFO:Checking exceptions
+2020-12-02 14:16:36,597:INFO:Preparing display monitor
+2020-12-02 14:16:36,602:INFO:Preloading libraries
+2020-12-02 14:16:36,614:INFO:Copying training dataset
+2020-12-02 14:16:36,615:INFO:Copying test dataset
+2020-12-02 14:16:36,616:INFO:Plot type: parameter
+2020-12-02 14:16:36,835:INFO:Visual Rendered Successfully
+2020-12-02 14:16:36,927:INFO:plot_model() succesfully completed......................................
+2020-12-02 14:17:32,997:INFO:Initializing predict_model()
+2020-12-02 14:17:32,997:INFO:predict_model(estimator=RandomForestClassifier(bootstrap=False, ccp_alpha=0.0, class_weight={},
+                       criterion='entropy', max_depth=5, max_features=1.0,
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0002, min_impurity_split=None,
+                       min_samples_leaf=5, min_samples_split=10,
+                       min_weight_fraction_leaf=0.0, n_estimators=150,
+                       n_jobs=-1, oob_score=False, random_state=123, verbose=0,
+                       warm_start=False), probability_threshold=None, encoded_labels=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2020-12-02 14:17:32,997:INFO:Checking exceptions
+2020-12-02 14:17:32,997:INFO:Preloading libraries
+2020-12-02 14:17:32,997:INFO:Preparing display monitor
