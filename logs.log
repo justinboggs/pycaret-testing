@@ -6775,3 +6775,88 @@
 2020-12-02 09:56:35,542:INFO:xgboost==1.2.1
 2020-12-02 09:56:35,542:INFO:lightgbm==2.3.1
 2020-12-02 09:56:35,638:INFO:catboost==0.24.3
+2020-12-02 09:56:36,220:INFO:mlflow==1.9.1
+2020-12-02 09:56:36,220:INFO:Checking Exceptions
+2020-12-02 09:56:36,220:INFO:Declaring global variables
+2020-12-02 09:56:36,220:INFO:USI: 3393
+2020-12-02 09:56:36,220:INFO:pycaret_globals: {'fix_imbalance_method_param', 'fold_param', 'prep_pipe', 'data_before_preprocess', 'exp_name_log', '_gpu_n_jobs_param', '_all_metrics', 'seed', 'target_param', '_all_models', 'fix_imbalance_param', 'transform_target_method_param', 'experiment__', 'log_plots_param', '_internal_pipeline', 'imputation_regressor', 'create_model_container', 'imputation_classifier', 'master_model_container', '_ml_usecase', 'n_jobs_param', '_all_models_internal', 'fold_generator', 'stratify_param', 'display_container', 'gpu_param', '_available_plots', 'transform_target_param', 'USI', 'fold_shuffle_param', 'fold_groups_param', 'pycaret_globals', 'iterative_imputation_iters_param', 'X', 'logging_param', 'html_param'}
+2020-12-02 09:56:36,220:INFO:Preparing display monitor
+2020-12-02 09:56:36,220:INFO:Preparing display monitor
+2020-12-02 09:56:36,230:INFO:Importing libraries
+2020-12-02 09:56:36,230:INFO:Copying data for preprocessing
+2020-12-02 09:56:36,235:INFO:Declaring preprocessing parameters
+2020-12-02 09:56:36,237:INFO:Creating preprocessing pipeline
+2020-12-02 09:56:36,259:INFO:Preprocessing pipeline created successfully
+2020-12-02 09:56:36,259:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2020-12-02 09:56:36,259:INFO:Creating global containers
+2020-12-02 09:56:36,261:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2020-12-02 09:56:38,084:INFO:Creating grid variables
+2020-12-02 09:56:38,098:INFO:create_model_container: 0
+2020-12-02 09:56:38,099:INFO:master_model_container: 0
+2020-12-02 09:56:38,099:INFO:display_container: 0
+2020-12-02 09:56:38,103:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True,
+                                      features_todrop=['MouseID'],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=[],
+                                      target='UNSUPERVISED_DUMMY_TARGET',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='most frequent',
+                                fill_value_categorical=None,
+                                fill_value_n...
+                ('P_transform', 'passthrough'), ('binn', 'passthrough'),
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='UNSUPERVISED_DUMMY_TARGET')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False)
+2020-12-02 09:56:38,103:INFO:setup() succesfully completed......................................
+2020-12-02 10:49:51,622:INFO:Initializing create_model()
+2020-12-02 10:49:51,623:INFO:create_model(estimator=iforest, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, verbose=True, system=True, raise_num_clusters=False, display=None, kwargs={})
+2020-12-02 10:49:51,623:INFO:Checking exceptions
+2020-12-02 10:49:51,623:INFO:Preparing display monitor
+2020-12-02 10:49:51,634:INFO:Importing libraries
+2020-12-02 10:49:51,640:INFO:Importing untrained model
+2020-12-02 10:49:51,647:INFO:Isolation Forest Imported succesfully
+2020-12-02 10:49:51,654:INFO:Fitting Model
+2020-12-02 10:49:52,149:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2020-12-02 10:49:52,149:INFO:create_models() succesfully completed......................................
+2020-12-02 10:49:52,150:INFO:Uploading results into container
+2020-12-02 10:49:52,150:INFO:Uploading model into container now
+2020-12-02 10:49:52,151:INFO:create_model_container: 1
+2020-12-02 10:49:52,151:INFO:master_model_container: 1
+2020-12-02 10:49:52,151:INFO:display_container: 1
+2020-12-02 10:49:52,151:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2020-12-02 10:49:52,151:INFO:create_model() succesfully completed......................................
+2020-12-02 10:50:36,982:INFO:Initializing create_model()
+2020-12-02 10:50:36,982:INFO:create_model(estimator=svm, num_clusters=4, fraction=0.025, ground_truth=None, round=4, fit_kwargs=None, verbose=True, system=True, raise_num_clusters=False, display=None, kwargs={})
+2020-12-02 10:50:36,982:INFO:Checking exceptions
+2020-12-02 10:50:36,983:INFO:Preparing display monitor
+2020-12-02 10:50:36,993:INFO:Importing libraries
+2020-12-02 10:50:36,998:INFO:Importing untrained model
+2020-12-02 10:50:37,004:INFO:One-class SVM detector Imported succesfully
+2020-12-02 10:50:37,011:INFO:Fitting Model
+2020-12-02 10:50:37,108:INFO:OCSVM(cache_size=200, coef0=0.0, contamination=0.025, degree=3, gamma='auto',
+   kernel='rbf', max_iter=-1, nu=0.5, shrinking=True, tol=0.001,
+   verbose=False)
+2020-12-02 10:50:37,108:INFO:create_models() succesfully completed......................................
+2020-12-02 10:50:37,108:INFO:Uploading results into container
+2020-12-02 10:50:37,109:INFO:Uploading model into container now
+2020-12-02 10:50:37,109:INFO:create_model_container: 2
+2020-12-02 10:50:37,109:INFO:master_model_container: 2
+2020-12-02 10:50:37,109:INFO:display_container: 2
+2020-12-02 10:50:37,110:INFO:OCSVM(cache_size=200, coef0=0.0, contamination=0.025, degree=3, gamma='auto',
+   kernel='rbf', max_iter=-1, nu=0.5, shrinking=True, tol=0.001,
+   verbose=False)
+2020-12-02 10:50:37,110:INFO:create_model() succesfully completed......................................
+2020-12-02 10:50:57,530:INFO:gpu_param set to False
