@@ -1,4 +1,4 @@
 # pycaret-testing
 
-# This repo is for testing multiple faets of PyCaret.
+# This repo is for testing multiple facets of PyCaret.
 ## www.pycaret.org

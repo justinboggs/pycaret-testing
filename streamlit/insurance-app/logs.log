@@ -115,3 +115,43 @@
 2021-01-02 00:45:53,326:INFO:display_container: 1
 2021-01-02 00:45:53,326:INFO:LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1, normalize=False)
 2021-01-02 00:45:53,326:INFO:create_model() succesfully completed......................................
+2021-01-02 00:45:58,636:INFO:Initializing plot_model()
+2021-01-02 00:45:58,636:INFO:plot_model(estimator=LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1, normalize=False), plot=residuals, save=False, verbose=True, system=True)
+2021-01-02 00:45:58,636:INFO:Checking exceptions
+2021-01-02 00:45:58,636:INFO:Preloading libraries
+2021-01-02 00:45:58,636:INFO:Preparing display monitor
+2021-01-02 00:45:58,642:INFO:Importing libraries
+2021-01-02 00:45:58,642:INFO:plot type: residuals
+2021-01-02 00:45:58,787:INFO:Fitting Model
+2021-01-02 00:45:58,808:INFO:Scoring test/hold-out set
+2021-01-02 00:45:59,209:INFO:Visual Rendered Successfully
+2021-01-02 00:45:59,210:INFO:plot_model() succesfully completed......................................
+2021-01-02 00:48:43,093:INFO:Initializing save_model()
+2021-01-02 00:48:43,094:INFO:save_model(model=LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1, normalize=False), model_name=deployment_01012021, verbose=True)
+2021-01-02 00:48:43,094:INFO:Appending prep pipeline
+2021-01-02 00:48:43,117:INFO:deployment_01012021.pkl saved in current working directory
+2021-01-02 00:48:43,123:INFO:[Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      ml_usecase='regression',
+                                      numerical_features=[], target='charges',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels...
+                ('rem_outliers', Empty()), ('cluster_all', Empty()),
+                ('dummy', Dummify(target='charges')), ('fix_perfect', Empty()),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', Empty()), ('fix_multi', Empty()),
+                ('dfs',
+                 DFS_Classic(interactions=['multiply'], ml_usecase='regression',
+                             random_state=123, subclass='binary',
+                             target='charges',
+                             top_features_to_pick_percentage=None)),
+                ('pca', Empty())],
+         verbose=False), LinearRegression(copy_X=True, fit_intercept=True, n_jobs=-1, normalize=False), None]
+2021-01-02 00:48:43,123:INFO:save_model() succesfully completed......................................
